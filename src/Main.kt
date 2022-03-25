@@ -8,6 +8,9 @@ fun main(){
     println(point == point2)
     println(point.symmetricalWrap().toString())
     println(point.getDistance(point2))
+    CarFactory().create("Audi")?.drive()
+    AircraftFactory().create("Boeing777")?.fly()
+    AbstractFactory().create("Drawing")?.description()
 }
 
 class Point(private val x : Double = 0.0,private val y: Double = 0.0) {
